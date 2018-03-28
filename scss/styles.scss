@@ -8,6 +8,7 @@ $container-header: #000000;
 $white: #fff;
 $border: #e5e5e5;
 $spacer: #f2f2f2;
+$lightGray: #cccccc;
 
 
 $main-font: 'Gotham', 'Helvetica', 'Arial', sans-serif;
@@ -22,7 +23,6 @@ body {
   height: 100%;
   margin: 0;
 }
-
 
 .selected { 
   background: $fanduel-highlight;
@@ -125,35 +125,85 @@ body {
 
  .shotchart-container {
    margin: 5px;
-   justify-content: center;
    height: 405px;
    background: $white;
    border-radius: 10px;
 
-   &__header--away {
-     color: $warriors;
+
+   &__header {
+     padding: 25px;
+     display: flex;
+     flex-direction: row;
+
+     &--away {
+      flex: 2;
+      color: $warriors;
+      text-align: left;
+     }
+
+     &--home {
+      flex: 2;
+      color:$thunder;
+      text-align: right;
+     }
+
+     &--location {
+      color: $lightGray;
+     }
+
+     &--time {
+       padding-bottom: 5px;
+     }
+
+     &--location,
+     &--time {
+       font-weight: bold;
+       font-size: 12px;
+       display: block;
+       text-align: center;
+       border-left: 1px solid $lightGray;
+       border-right: 1px solid $lightGray;
+       padding-left: 15px;
+       padding-right: 15px;
+     }
    }
 
-   &__header--home {
-     color:$thunder;
-   }
+   &__awayScore {
+    color: $warriors;
+    flex: 1;
+  }
+
+  &__homeScore {
+    color: $thunder;
+    flex: 1;
+    margin-left: 25px;
+  }
+
+  &__awayScore, 
+  &__homeScore {
+    flex: 1;
+    font-size: 64px;
+    font-weight: bold;
+  }
 
    &__awayCity,
    &__awayTeam,
    &__homeCity,
    &__homeTeam {
-     font-size: 1.5em;
+     font-family: 'Gotham Medium', sans-serif;
+     font-size: 20px;
+     line-height: 20px;
      text-transform: uppercase;
    }
 
    &__awayCity,
    &__homeCity {
-     font-weight: 200;
+     font-weight: 400;
    }
 
    &__awayTeam,
    &__homeTeam {
-     font-weight: 400;
+     font-weight: bold;
      display: block;
    }
 
@@ -175,6 +225,10 @@ body {
      &--selected {
        font-weight: bold;
      }
+   }
+
+   &__content {
+     text-align: center;
    }
  }
 
@@ -236,6 +290,12 @@ body {
    .content,
    .inside-left {
      flex-direction: column;
+   }
+
+   .shotchart-container {
+     &__content img {
+       width: 60%;
+     }
    }
  }
  

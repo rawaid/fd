@@ -78,21 +78,54 @@ body {
 
 .shotchart-container {
   margin: 5px;
-  justify-content: center;
   height: 405px;
   background: #fff;
   border-radius: 10px; }
-  .shotchart-container__header--away {
-    color: #fdb92c; }
-  .shotchart-container__header--home {
-    color: #127dc2; }
+  .shotchart-container__header {
+    padding: 25px;
+    display: flex;
+    flex-direction: row; }
+    .shotchart-container__header--away {
+      flex: 2;
+      color: #fdb92c;
+      text-align: left; }
+    .shotchart-container__header--home {
+      flex: 2;
+      color: #127dc2;
+      text-align: right; }
+    .shotchart-container__header--location {
+      color: #cccccc; }
+    .shotchart-container__header--time {
+      padding-bottom: 5px; }
+    .shotchart-container__header--location, .shotchart-container__header--time {
+      font-weight: bold;
+      font-size: 12px;
+      display: block;
+      text-align: center;
+      border-left: 1px solid #cccccc;
+      border-right: 1px solid #cccccc;
+      padding-left: 15px;
+      padding-right: 15px; }
+  .shotchart-container__awayScore {
+    color: #fdb92c;
+    flex: 1; }
+  .shotchart-container__homeScore {
+    color: #127dc2;
+    flex: 1;
+    margin-left: 25px; }
+  .shotchart-container__awayScore, .shotchart-container__homeScore {
+    flex: 1;
+    font-size: 64px;
+    font-weight: bold; }
   .shotchart-container__awayCity, .shotchart-container__awayTeam, .shotchart-container__homeCity, .shotchart-container__homeTeam {
-    font-size: 1.5em;
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
     text-transform: uppercase; }
   .shotchart-container__awayCity, .shotchart-container__homeCity {
-    font-weight: 200; }
+    font-weight: 400; }
   .shotchart-container__awayTeam, .shotchart-container__homeTeam {
-    font-weight: 400;
+    font-weight: bold;
     display: block; }
   .shotchart-container__spacer {
     background: #f2f2f2;
@@ -108,6 +141,8 @@ body {
     padding: 7px; }
     .shotchart-container__toggle--selected {
       font-weight: bold; }
+  .shotchart-container__content {
+    text-align: center; }
 
 .scoring-container {
   margin: 5px;
@@ -154,4 +189,6 @@ body {
 @media (max-width: 641px) {
   .content,
   .inside-left {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .shotchart-container__content img {
+    width: 60%; } }
