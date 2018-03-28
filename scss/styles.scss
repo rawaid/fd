@@ -9,7 +9,8 @@ $white: #fff;
 $border: #e5e5e5;
 $spacer: #f2f2f2;
 $lightGray: #cccccc;
-
+$fd-gray: #333333;
+$satan-gray: #666666;
 
 $main-font: 'Gotham', 'Helvetica', 'Arial', sans-serif;
 
@@ -148,17 +149,18 @@ body {
      }
 
      &--location {
-      color: $lightGray;
+      color: $fd-gray;
+      font-size: 11px;
      }
 
      &--time {
        padding-bottom: 5px;
+       font-size: 13px;
      }
 
      &--location,
      &--time {
        font-weight: bold;
-       font-size: 12px;
        display: block;
        text-align: center;
        border-left: 1px solid $lightGray;
@@ -269,7 +271,7 @@ body {
  .stats-container {
    margin: 5px;
    background: $white;
-   height: 400px;
+   height: 427px;
    flex: 1;
   //  width: 100%; 
 
@@ -283,6 +285,55 @@ body {
     font-weight: 400;
     background: $container-header;
     color: $white;
+   }
+ }
+
+ .pbp-container {
+
+   &__row {
+     padding: 10px;
+     display: flex;
+     border-bottom: 1px solid $lightGray;
+   }
+
+   &__headshot {
+     margin-right: 5px;
+   }
+
+   &__player,
+   &__score {
+     font-weight: bold;
+   }
+
+   &__player,
+   &__play {
+     line-height: 14px;
+   }
+
+   &__play {
+     color: $fd-gray;
+     font-size: 12px;
+     font-weight: 500;
+   }
+
+   &__play div {
+     display: block;
+   }
+
+   &__time {
+     font-size: 11px;
+     color: $satan-gray;
+     font-weight: 500;
+     letter-spacing: -0.22px;
+   }
+
+   &__score {
+     flex: 2;
+     padding-top: 3px;
+     text-align: right;
+     font-size: 14px;
+     letter-spacing: -0.24px;
+     align-content: center;
    }
  }
 
