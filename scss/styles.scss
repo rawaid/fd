@@ -1,0 +1,200 @@
+$fanduel-navy: #2d363c;
+$fanduel-bg: #bcbcbc;
+$fanduel-highlight: #505a61;
+$warriors: #fdb92c;
+$thunder: #127dc2;
+$fd-green: #71a645;
+$container-header: #000000;
+$white: #fff;
+$border: #e5e5e5;
+
+
+$main-font: 'Gotham', 'Helvetica', 'Arial', sans-serif;
+
+* {
+  font-family: $main-font;
+}
+
+body {
+  background: $fanduel-bg;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+
+.selected { 
+  background: $fanduel-highlight;
+}
+
+.global-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 66px;
+  background: $fanduel-navy;
+  color: $white;
+  -webkit-font-smoothing: antialiased;
+  font-size: 0.875rem;
+
+  &__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+
+.logo-container {
+  padding-left: 0;
+  padding-top: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.logo {
+  height: 38px;
+  width: 140px;
+  padding-top: 5px;
+  padding-left: 10px;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+ }
+
+ .primary-nav {
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+
+  &__list {
+    display: flex;
+   flex-wrap: wrap;
+   list-style-type: none;
+   margin: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    list-style-type: none;
+
+    // &:not(:last-child) {
+    //   margin-right: 24px;
+    // }
+
+    &:hover {
+      background: $fanduel-highlight;
+    }
+  }
+
+  &__anchor {
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-decoration: none;
+    line-height: 66px;
+    overflow: hidden;
+    position: relative;
+
+
+    &:link, 
+    &:visited, 
+    &:active {
+      color: $white;
+    }
+  }
+
+
+ }
+
+ .content {
+   display: flex;
+   margin-top: 60px;
+   padding: 20px;
+
+ }
+
+ .left-container {
+   flex: 3;
+ }
+
+ .shotchart-container {
+   margin: 5px;
+   justify-content: center;
+   height: 405px;
+   background: $white;
+   border-radius: 10px;
+
+   &__header--away {
+     color: $warriors;
+   }
+
+   &__header--home {
+     color:$thunder;
+   }
+ }
+
+ .scoring-container {
+   margin: 5px;
+   flex: 1;
+   background: $white;
+
+   &__header {
+     text-align: center;
+     height: 20px;
+     padding: 15px;
+     text-transform: uppercase;
+     font-size: 14px;
+     font-weight: 400;
+     background: $container-header;
+     color: $white;
+   }
+
+   &__nav {
+     padding: 10px 10px;
+     text-transform: uppercase;
+     font-size: 13px;
+     border-bottom: 1px solid $border;
+   }
+
+   &__item {
+     padding-right: 15px;
+   }
+ }
+
+ .inside-left {
+  //  justify-content: center;
+  display: flex;
+ }
+
+ .pbp-container,
+ .stats-container {
+   margin: 5px;
+   background: $white;
+   height: 400px;
+   flex: 1;
+  //  width: 100%; 
+
+   &__header{
+    font-weight: bold;
+    text-align: center;
+    height: 20px;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    background: $container-header;
+    color: $white;
+   }
+ }
+
+ @media (max-width: 641px) {
+   .content {
+     flex-direction: column;
+   }
+ }
+ 
