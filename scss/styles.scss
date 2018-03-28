@@ -7,6 +7,7 @@ $fd-green: #71a645;
 $container-header: #000000;
 $white: #fff;
 $border: #e5e5e5;
+$spacer: #f2f2f2;
 
 
 $main-font: 'Gotham', 'Helvetica', 'Arial', sans-serif;
@@ -136,6 +137,45 @@ body {
    &__header--home {
      color:$thunder;
    }
+
+   &__awayCity,
+   &__awayTeam,
+   &__homeCity,
+   &__homeTeam {
+     font-size: 1.5em;
+     text-transform: uppercase;
+   }
+
+   &__awayCity,
+   &__homeCity {
+     font-weight: 200;
+   }
+
+   &__awayTeam,
+   &__homeTeam {
+     font-weight: 400;
+     display: block;
+   }
+
+   &__spacer {
+     background: $spacer;
+     padding: 7px;
+     display: block;
+     text-transform: uppercase;
+     font-size: 10px;
+     text-align: center;
+   }
+
+   &__toggle {
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 12px;
+     padding: 7px;
+
+     &--selected {
+       font-weight: bold;
+     }
+   }
  }
 
  .scoring-container {
@@ -193,7 +233,8 @@ body {
  }
 
  @media (max-width: 641px) {
-   .content {
+   .content,
+   .inside-left {
      flex-direction: column;
    }
  }

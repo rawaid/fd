@@ -86,6 +86,28 @@ body {
     color: #fdb92c; }
   .shotchart-container__header--home {
     color: #127dc2; }
+  .shotchart-container__awayCity, .shotchart-container__awayTeam, .shotchart-container__homeCity, .shotchart-container__homeTeam {
+    font-size: 1.5em;
+    text-transform: uppercase; }
+  .shotchart-container__awayCity, .shotchart-container__homeCity {
+    font-weight: 200; }
+  .shotchart-container__awayTeam, .shotchart-container__homeTeam {
+    font-weight: 400;
+    display: block; }
+  .shotchart-container__spacer {
+    background: #f2f2f2;
+    padding: 7px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align: center; }
+  .shotchart-container__toggle {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 7px; }
+    .shotchart-container__toggle--selected {
+      font-weight: bold; }
 
 .scoring-container {
   margin: 5px;
@@ -130,5 +152,6 @@ body {
     color: #fff; }
 
 @media (max-width: 641px) {
-  .content {
+  .content,
+  .inside-left {
     flex-direction: column; } }
