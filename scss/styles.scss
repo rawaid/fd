@@ -43,11 +43,21 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  height: 66px;
-  background: $fanduel-navy;
+  height: 92px;
+  background: $footer-gray;
   color: $white;
   -webkit-font-smoothing: antialiased;
   font-size: 0.875rem;
+
+  &__leagueRow {
+    background: $fanduel-navy;
+    height: 26px;
+  }
+
+  &__left {
+    padding: 20px 10px 20px 10px;
+    background: $footer-gray;
+  }
 
   &__container {
     display: -webkit-box;
@@ -157,7 +167,7 @@ body {
      }
 
      &--location {
-      color: $fd-gray;
+      color: $location-gray;
       font-size: 11px;
      }
 
@@ -277,7 +287,7 @@ body {
    }
 
    .scoringTab {
-    color: $scoringGreen;
+    color: $selectedGreen;
    }   
 
  }
