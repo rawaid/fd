@@ -1,9 +1,9 @@
 @import 'colors';
-$main-font: 'Gotham', 'Helvetica', 'Arial', sans-serif;
+$main-font: Helvetica, Arial, sans-serif;
 
-// * {
-//   font-family: $main-font;
-// }
+* {
+  font-family: $main-font;
+}
 
 body {
   background: $fanduel-bg;
@@ -166,6 +166,10 @@ body {
        font-size: 13px;
      }
 
+     &--info {
+       flex: 1;
+     }
+
      &--location,
      &--time {
        font-weight: bold;
@@ -186,7 +190,7 @@ body {
   &__homeScore {
     color: $thunder;
     flex: 1;
-    margin-left: 25px;
+    text-align: right;
   }
 
   &__awayScore, 
@@ -365,7 +369,8 @@ body {
 
  @media (max-width: 641px) {
    .content,
-   .inside-left {
+   .inside-left,
+   .shotchart-container__header {
      flex-direction: column;
    }
 
