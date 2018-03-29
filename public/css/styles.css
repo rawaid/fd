@@ -34,17 +34,11 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  height: 92px;
-  background: #505961;
+  height: 66px;
+  background: #2d363c;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   font-size: 0.875rem; }
-  .global-footer__leagueRow {
-    background: #2d363c;
-    height: 26px; }
-  .global-footer__left {
-    padding: 20px 10px 20px 10px;
-    background: #505961; }
   .global-footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -118,7 +112,7 @@ body {
       color: #127dc2;
       text-align: right; }
     .shotchart-container__header--location {
-      color: #858585;
+      color: #333333;
       font-size: 11px; }
     .shotchart-container__header--time {
       padding-bottom: 5px;
