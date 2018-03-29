@@ -173,7 +173,8 @@ body {
 .stats-container {
   margin: 5px;
   background: #fff;
-  height: 427px;
+  min-height: 427px;
+  height: 100%;
   flex: 1; }
   .pbp-container__header,
   .stats-container__header {
@@ -186,6 +187,9 @@ body {
     font-weight: 400;
     background: #000000;
     color: #fff; }
+
+.pbp-container .highlighted {
+  background: linear-gradient(to top, #fff8ea, #fff); }
 
 .pbp-container__row {
   padding: 10px;
