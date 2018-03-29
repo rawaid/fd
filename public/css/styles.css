@@ -1,7 +1,5 @@
-* {
-  font-family: Helvetica, Arial, sans-serif; }
-
 body {
+  font-family: Helvetica, Arial, sans-serif;
   background: #bcbcbc;
   width: 100%;
   height: 100%;
@@ -34,11 +32,17 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  height: 66px;
-  background: #2d363c;
+  height: 92px;
+  background: #505961;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   font-size: 0.875rem; }
+  .global-footer__leagueRow {
+    background: #2d363c;
+    height: 26px; }
+  .global-footer__left {
+    padding: 20px 10px 20px 10px;
+    background: #505961; }
   .global-footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -112,7 +116,7 @@ body {
       color: #127dc2;
       text-align: right; }
     .shotchart-container__header--location {
-      color: #333333;
+      color: #858585;
       font-size: 11px; }
     .shotchart-container__header--time {
       padding-bottom: 5px;
