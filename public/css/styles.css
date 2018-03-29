@@ -32,7 +32,7 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  height: 92px;
+  height: 101px;
   background: #505961;
   color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -40,9 +40,37 @@ body {
   .global-footer__leagueRow {
     background: #2d363c;
     height: 26px; }
-  .global-footer__left {
-    padding: 20px 10px 20px 10px;
+  .global-footer__left, .global-footer__right {
+    padding: 27px 10px 27px 10px;
     background: #505961; }
+  .global-footer__currentGame {
+    display: flex;
+    padding: 11px 50px 11px 15px;
+    background-color: #616a71; }
+  .global-footer__teamAbbr {
+    margin-left: 30px;
+    padding-right: 5px;
+    font-size: 11px;
+    font-weight: bold; }
+  .global-footer__team {
+    padding: 1px;
+    text-transform: uppercase; }
+  .global-footer__points {
+    font-weight: bold;
+    margin-left: 20px;
+    display: block; }
+  .global-footer__time {
+    font-size: 12px; }
+  .global-footer__players {
+    padding-left: 20px; }
+  .global-footer__player {
+    font-weight: bold; }
+  .global-footer__stats {
+    font-size: 11px; }
+  .global-footer__away, .global-footer__home {
+    display: inline; }
+  .global-footer__player {
+    display: block; }
   .global-footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -266,5 +294,7 @@ body {
   .inside-left,
   .shotchart-container__header {
     flex-direction: column; }
+  .global-footer {
+    display: none; }
   .shotchart-container__content img {
     width: 60%; } }
