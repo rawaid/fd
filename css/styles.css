@@ -53,10 +53,20 @@ body {
   .global-footer__left, .global-footer__right {
     padding: 27px 10px 27px 10px;
     background: #505961; }
+  .global-footer__currentGame, .global-footer__otherGames {
+    display: flex; }
   .global-footer__currentGame {
-    display: flex;
-    padding: 11px 50px 11px 15px;
-    background-color: #616a71; }
+    background-color: #616a71;
+    padding: 11px 50px 11px 15px; }
+  .global-footer__otherGames {
+    color: #a8acb0; }
+  .global-footer__otherScore {
+    padding-right: 20px;
+    border-right: 1px solid #a8acb0;
+    padding-top: 11px; }
+  .global-footer__otherTeams {
+    padding-left: 10px;
+    padding-top: 11px; }
   .global-footer__teamAbbr {
     margin-left: 30px;
     padding-right: 5px;

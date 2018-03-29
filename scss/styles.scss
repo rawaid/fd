@@ -59,7 +59,7 @@ body {
   }
 
   .current {
-    background: $selectedGreen;
+    background: $selected-green;
     font-weight: bold;
   }
 
@@ -75,10 +75,29 @@ body {
     background: $footer-gray;
   }
 
-  &__currentGame {
+  &__currentGame,
+  &__otherGames{
     display: flex;
-    padding: 11px 50px 11px 15px;
+  }
+
+  &__currentGame {
     background-color: $footer-current;
+    padding: 11px 50px 11px 15px;
+  }
+
+  &__otherGames {
+    color: $other-games;
+  }
+
+  &__otherScore {
+    padding-right:20px;
+    border-right: 1px solid $other-games;
+    padding-top: 11px;
+  }
+
+  &__otherTeams {
+    padding-left: 10px;
+    padding-top: 11px;
   }
 
   &__teamAbbr {
@@ -252,8 +271,8 @@ body {
        font-weight: bold;
        display: block;
        text-align: center;
-       border-left: 1px solid $lightGray;
-       border-right: 1px solid $lightGray;
+       border-left: 1px solid $light-gray;
+       border-right: 1px solid $light-gray;
        padding-left: 15px;
        padding-right: 15px;
      }
@@ -358,7 +377,7 @@ body {
    }
 
    .scoringTab {
-    color: $selectedGreen;
+    color: $selected-green;
    }   
 
  }
@@ -400,7 +419,7 @@ body {
    &__row {
      padding: 10px;
      display: flex;
-     border-bottom: 1px solid $lightGray;
+     border-bottom: 1px solid $light-gray;
    }
 
    &__headshot {
