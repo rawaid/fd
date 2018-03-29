@@ -15,22 +15,8 @@ gulp.task('compileSass', function() {
 });    
 
 gulp.task("concatIndex", function() {
-  gulp.src(['partials/header.html', 'partials/indexbody.html', 'partials/footer.html'])
+  gulp.src(['partials/header.html', 'partials/index.html', 'partials/footer.html'])
   .pipe(concat("index.html"))
-  .pipe(gulp.dest("public"))
-  .pipe(livereload());
-});
-
-gulp.task("concatAbout", function() {
-  gulp.src(['partials/header.html', 'partials/aboutbody.html', 'partials/footer.html'])
-  .pipe(concat("about.html"))
-  .pipe(gulp.dest("public"))
-  .pipe(livereload());
-});
-
-gulp.task("concatContact", function() {
-  gulp.src(['partials/header.html', 'partials/contactbody.html', 'partials/footer.html'])
-  .pipe(concat("contact.html"))
   .pipe(gulp.dest("public"))
   .pipe(livereload());
 });
@@ -45,7 +31,7 @@ gulp.task('clean', function() {
   del(['public'])
 });
 
-gulp.task("build", ['compileSass', 'concatIndex', 'concatAbout', 'concatContact'], function() {
+gulp.task("build", ['compileSass', 'concatIndex'], function() {
   return gulp.src(["css/*", "img/*", "js/*"], { base: './'})
   .pipe(gulp.dest('public'));
             
