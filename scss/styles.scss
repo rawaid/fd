@@ -37,6 +37,27 @@ body {
   }
 }
 
+.global-footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 66px;
+  background: $fanduel-navy;
+  color: $white;
+  -webkit-font-smoothing: antialiased;
+  font-size: 0.875rem;
+
+  &__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
 
 .logo-container {
   padding-left: 0;
@@ -227,14 +248,16 @@ body {
    background: $white;
 
    &__header {
-     text-align: center;
-     height: 20px;
-     padding: 15px;
-     text-transform: uppercase;
-     font-size: 14px;
-     font-weight: 400;
-     background: $container-header;
-     color: $white;
+    text-align: center;
+    height: 15px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: -0.24px;
+    background: $container-header;
+    color: $white;
    }
 
    &__nav {
@@ -246,7 +269,17 @@ body {
 
    &__item {
      padding-right: 15px;
+     font-size: 11px;
+     font-weight: 500;
+     line-height: 7px;
+     text-transform: uppercase;
+     cursor: pointer;
    }
+
+   .scoringTab {
+    color: $scoringGreen;
+   }   
+
  }
 
  .inside-left {
@@ -264,13 +297,14 @@ body {
   //  width: 100%; 
 
    &__header{
-    font-weight: bold;
     text-align: center;
-    height: 20px;
-    padding: 15px;
+    height: 15px;
+    padding: 10px;
     text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: -0.24px;
     background: $container-header;
     color: $white;
    }

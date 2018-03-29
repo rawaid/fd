@@ -28,6 +28,24 @@ body {
     max-width: 100%;
     margin: 0 auto; }
 
+.global-footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 66px;
+  background: #2d363c;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  font-size: 0.875rem; }
+  .global-footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto; }
+
 .logo-container {
   padding-left: 0;
   padding-top: 10px;
@@ -151,11 +169,13 @@ body {
   background: #fff; }
   .scoring-container__header {
     text-align: center;
-    height: 20px;
-    padding: 15px;
+    height: 15px;
+    padding: 10px;
     text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: -0.24px;
     background: #000000;
     color: #fff; }
   .scoring-container__nav {
@@ -164,7 +184,14 @@ body {
     font-size: 13px;
     border-bottom: 1px solid #e5e5e5; }
   .scoring-container__item {
-    padding-right: 15px; }
+    padding-right: 15px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 7px;
+    text-transform: uppercase;
+    cursor: pointer; }
+  .scoring-container .scoringTab {
+    color: #669933; }
 
 .inside-left {
   display: flex; }
@@ -178,13 +205,14 @@ body {
   flex: 1; }
   .pbp-container__header,
   .stats-container__header {
-    font-weight: bold;
     text-align: center;
-    height: 20px;
-    padding: 15px;
+    height: 15px;
+    padding: 10px;
     text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: -0.24px;
     background: #000000;
     color: #fff; }
 
