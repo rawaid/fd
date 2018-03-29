@@ -39,7 +39,17 @@ body {
   font-size: 0.875rem; }
   .global-footer__leagueRow {
     background: #2d363c;
-    height: 26px; }
+    height: 22px;
+    padding-left: 27px;
+    padding-top: 5px; }
+  .global-footer__league {
+    padding: 5px 120px 6px 15px; }
+  .global-footer .current {
+    background: #669933;
+    font-weight: bold; }
+  .global-footer .other {
+    color: #505a61;
+    border-right: 1px solid #505a61; }
   .global-footer__left, .global-footer__right {
     padding: 27px 10px 27px 10px;
     background: #505961; }

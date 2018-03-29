@@ -48,8 +48,26 @@ body {
 
   &__leagueRow {
     background: $fanduel-navy;
-    height: 26px;
+    // height: 26px;
+    height: 22px;
+    padding-left: 27px;
+    padding-top: 5px;
   }
+
+  &__league {
+    padding: 5px 120px 6px 15px;
+  }
+
+  .current {
+    background: $selectedGreen;
+    font-weight: bold;
+  }
+
+  .other {
+    color: $fanduel-highlight;
+    border-right: 1px solid $fanduel-highlight;
+  }
+
 
   &__left,
   &__right {
