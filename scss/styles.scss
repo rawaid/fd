@@ -42,16 +42,17 @@ body {
   z-index: 1000;
   height: 101px;
   background: $footer-gray;
+  overflow-x: scroll;
   color: $white;
   -webkit-font-smoothing: antialiased;
   font-size: 0.875rem;
 
   &__leagueRow {
     background: $fanduel-navy;
-    // height: 26px;
     height: 22px;
     padding-left: 27px;
     padding-top: 5px;
+    width: 120%;
   }
 
   &__league {
@@ -73,6 +74,10 @@ body {
   &__right {
     padding: 27px 10px 27px 10px;
     background: $footer-gray;
+  }
+
+  &__right {
+    margin-left: auto;
   }
 
   &__currentGame,
@@ -118,8 +123,10 @@ body {
     display: block;
   }
 
-  &__time {
-    font-size: 12px;
+  &__time,
+  &__stats {
+    white-space: nowrap;
+    font-size: 11px;
   }
 
   &__players {
@@ -130,9 +137,10 @@ body {
     font-weight: bold;
   }
 
-  &__stats {
-    font-size: 11px;
-  }
+  // &__stats {
+  //   font-size: 11px;
+  //   white-space: nowrap;
+  // }
   
   &__away, 
   &__home {
@@ -477,8 +485,11 @@ body {
    }
 
    .shotchart-container {
+     height: 100%;
+
      &__content img {
-       width: 60%;
+       padding: 10px;
+       width: 80%;
      }
    }
 
