@@ -188,10 +188,6 @@ body {
   &__item {
     display: inline-block;
     list-style-type: none;
-
-    &:hover {
-      background: $fanduel-highlight;
-    }
   }
 
   &__anchor {
@@ -214,6 +210,7 @@ body {
  .secondary-nav {
    text-align: right;
    margin-left: auto;
+ 
    &__balance,
    &__balance div {
      display: inline;
@@ -239,6 +236,12 @@ body {
      font-size: 12px;
      margin-top: 5px;
      margin-left: 10px;
+   }
+
+   &__icon {
+     position: relative;
+     top: 15px;
+     right: 10px;
    }
  }
 

@@ -131,9 +131,6 @@ body {
   .secondary-nav__item {
     display: inline-block;
     list-style-type: none; }
-    .primary-nav__item:hover,
-    .secondary-nav__item:hover {
-      background: #505a61; }
   .primary-nav__anchor,
   .secondary-nav__anchor {
     text-align: center;
@@ -173,6 +170,10 @@ body {
     font-size: 12px;
     margin-top: 5px;
     margin-left: 10px; }
+  .secondary-nav__icon {
+    position: relative;
+    top: 15px;
+    right: 10px; }
 
 .content {
   display: flex;
