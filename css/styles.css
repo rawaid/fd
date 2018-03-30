@@ -382,5 +382,8 @@ body {
       background: #fff; } }
 
 @media (min-width: 641px) {
+  .content {
+    padding-left: 5%;
+    padding-right: 5%; }
   .sidebar-nav {
     display: none; } }
