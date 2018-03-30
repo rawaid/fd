@@ -310,6 +310,8 @@ body {
   align-content: center; }
 
 @media (max-width: 641px) {
+  .primary-nav {
+    display: none; }
   .content,
   .inside-left,
   .shotchart-container__header {
@@ -317,4 +319,66 @@ body {
   .global-footer {
     display: none; }
   .shotchart-container__content img {
-    width: 60%; } }
+    width: 60%; }
+  .active {
+    left: 0 !important; }
+  .sidebar-nav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background: #2d363c;
+    width: 250px;
+    height: 100%;
+    transition: .3s; }
+    .sidebar-nav__list {
+      margin: 0;
+      padding: 20px 0; }
+    .sidebar-nav__item {
+      list-style: none; }
+    .sidebar-nav__anchor {
+      padding: 10px 20px;
+      color: #fff;
+      display: block;
+      text-decoration: none;
+      border-bottom: 1px solid #a8acb0; }
+      .sidebar-nav__anchor:hover {
+        background: #505a61; }
+  .sidebarBtn {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 66px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #2d363c;
+    border: none;
+    outline: none; }
+    .sidebarBtn span {
+      display: block;
+      width: 35px;
+      height: 3px;
+      background: #fff;
+      position: absolute;
+      top: 30px;
+      transition: .3s; }
+    .sidebarBtn span:before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #fff; }
+    .sidebarBtn span:after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #fff; } }
+
+@media (min-width: 641px) {
+  .sidebar-nav {
+    display: none; } }
