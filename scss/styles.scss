@@ -1,5 +1,5 @@
 @import 'colors';
-$main-font:Helvetica, Arial, sans-serif;
+$main-font: Helvetica, Arial, sans-serif;
 
 body {
   font-family: $main-font;
@@ -9,7 +9,7 @@ body {
   margin: 0;
 }
 
-.selected { 
+.selected {
   background: $fanduel-highlight;
 }
 
@@ -69,7 +69,6 @@ body {
     border-right: 1px solid $fanduel-highlight;
   }
 
-
   &__left,
   &__right {
     padding: 27px 10px 27px 10px;
@@ -81,7 +80,7 @@ body {
   }
 
   &__currentGame,
-  &__otherGames{
+  &__otherGames {
     display: flex;
   }
 
@@ -95,7 +94,7 @@ body {
   }
 
   &__otherScore {
-    padding-right:20px;
+    padding-right: 20px;
     border-right: 1px solid $other-games;
     padding-top: 11px;
   }
@@ -137,7 +136,7 @@ body {
     font-weight: bold;
   }
 
-  &__away, 
+  &__away,
   &__home {
     display: inline;
   }
@@ -170,19 +169,19 @@ body {
   display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
- }
+}
 
- .primary-nav,
- .secondary-nav {
+.primary-nav,
+.secondary-nav {
   -webkit-box-flex: 0;
   -ms-flex: none;
   flex: none;
 
   &__list {
-   display: flex;
-   flex-wrap: wrap;
-   list-style-type: none;
-   margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
   }
 
   &__item {
@@ -199,113 +198,112 @@ body {
     overflow: hidden;
     position: relative;
 
-    &:link, 
-    &:visited, 
+    &:link,
+    &:visited,
     &:active {
       color: $white;
     }
   }
- }
+}
 
- .secondary-nav {
-   text-align: right;
-   margin-left: auto;
- 
-   &__balance,
-   &__balance div {
-     display: inline;
-     height: 66px;
-   }
+.secondary-nav {
+  text-align: right;
+  margin-left: auto;
 
-   &__balance div:nth-child(2) {
-     position: absolute;
-     display: block;
-     top: -10px;
-     left: 63px;
-     bottom: 15px;
-     font-size: 11px;
-   }
+  &__balance,
+  &__balance div {
+    display: inline;
+    height: 66px;
+  }
 
-   &__button {
-     display: inline;
-     border-radius: 3px;
-     position: relative;
-     top: 5px;
-     padding: 6px 10px 6px 10px;
-     background: $selected-green;
-     font-size: 12px;
-     margin-top: 5px;
-     margin-left: 10px;
-   }
+  &__balance div:nth-child(2) {
+    position: absolute;
+    display: block;
+    top: -10px;
+    left: 63px;
+    bottom: 15px;
+    font-size: 11px;
+  }
 
-   &__icon {
-     position: relative;
-     top: 15px;
-     right: 10px;
-   }
- }
+  &__button {
+    display: inline;
+    border-radius: 3px;
+    position: relative;
+    top: 5px;
+    padding: 6px 10px 6px 10px;
+    background: $selected-green;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
 
- .content {
-   display: flex;
-   margin-top: 60px;
-   padding: 20px;
- }
+  &__icon {
+    position: relative;
+    top: 15px;
+    right: 10px;
+  }
+}
 
- .left-container {
-   flex: 3;
- }
+.content {
+  display: flex;
+  margin-top: 60px;
+  padding: 20px;
+}
 
- .shotchart-container {
-   margin: 5px;
-   height: 430px;
-   background: $white;
-   border-radius: 10px;
+.left-container {
+  flex: 3;
+}
 
+.shotchart-container {
+  margin: 5px;
+  height: 450px;
+  background: $white;
+  border-radius: 10px;
 
-   &__header {
-     padding: 25px;
-     display: flex;
-     flex-direction: row;
+  &__header {
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
 
-     &--away {
+    &--away {
       flex: 2;
       color: $warriors;
       text-align: left;
-     }
+    }
 
-     &--home {
+    &--home {
       flex: 2;
-      color:$thunder;
+      color: $thunder;
       text-align: right;
-     }
+    }
 
-     &--location {
+    &--location {
       color: $location-gray;
       font-size: 11px;
-     }
+    }
 
-     &--time {
-       padding-bottom: 5px;
-       font-size: 13px;
-     }
+    &--time {
+      padding-bottom: 5px;
+      font-size: 13px;
+    }
 
-     &--info {
-       flex: 1;
-     }
+    &--info {
+      flex: 1;
+    }
 
-     &--location,
-     &--time {
-       font-weight: bold;
-       display: block;
-       text-align: center;
-       border-left: 1px solid $light-gray;
-       border-right: 1px solid $light-gray;
-       padding-left: 15px;
-       padding-right: 15px;
-     }
-   }
+    &--location,
+    &--time {
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      border-left: 1px solid $light-gray;
+      border-right: 1px solid $light-gray;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
 
-   &__awayScore {
+  &__awayScore {
     color: $warriors;
     flex: 1;
   }
@@ -316,65 +314,119 @@ body {
     text-align: right;
   }
 
-  &__awayScore, 
+  &__awayScore,
   &__homeScore {
     flex: 1;
     font-size: 64px;
     font-weight: bold;
   }
 
-   &__awayCity,
-   &__awayTeam,
-   &__homeCity,
-   &__homeTeam {
-     font-family: 'Gotham Medium', sans-serif;
-     font-size: 20px;
-     line-height: 20px;
-     text-transform: uppercase;
-   }
+  &__awayCity,
+  &__awayTeam,
+  &__homeCity,
+  &__homeTeam {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
 
-   &__awayCity,
-   &__homeCity {
-     font-weight: 400;
-   }
+  &__awayCity,
+  &__homeCity {
+    font-weight: 400;
+  }
 
-   &__awayTeam,
-   &__homeTeam {
-     font-weight: bold;
-     display: block;
-   }
+  &__awayTeam,
+  &__homeTeam {
+    font-weight: bold;
+    display: block;
+  }
 
-   &__spacer {
-     background: $spacer;
-     padding: 7px;
-     display: block;
-     text-transform: uppercase;
-     font-size: 10px;
-     text-align: center;
-   }
+  &__spacer {
+    background: $spacer;
+    padding: 7px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align: center;
+  }
 
-   &__toggle {
-     text-align: center;
-     text-transform: uppercase;
-     font-size: 12px;
-     padding: 7px;
+  &__toggle {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 7px;
 
-     &--selected {
-       font-weight: bold;
-     }
-   }
+    &--selected {
+      font-weight: bold;
+    }
+  }
 
-   &__content {
-     text-align: center;
-   }
- }
+  &__content {
+    text-align: center;
+  }
 
- .scoring-container {
-   margin: 5px;
-   flex: 1;
-   background: $white;
+  &__bottom {
+    display: flex;
+  }
 
-   &__header {
+  &__awayStats,
+  &__homeStats {
+    list-style-type: none;
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  &__awayStats,
+  &__homeStats,
+  &__shotchart {
+    flex: 3;
+  }
+
+  &__awayStats {
+    position: relative;
+  }
+
+  &__statType {
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  &__stat {
+    display: inline;
+    &--away,
+    &--home {
+      list-style-type: none;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 22px;
+      position: relative;
+      &:after {
+        content: '';
+        background: $light-gray;
+        position: absolute;
+        bottom: -10px;
+        margin-left: -80px;
+        width: 90px;
+        height: 1px;
+      }
+    }
+
+    &--away {
+      color: $warriors;
+    }
+
+    &--home {
+      color: $thunder;
+    }
+  }
+}
+
+.scoring-container {
+  margin: 5px;
+  flex: 1;
+  background: $white;
+
+  &__header {
     text-align: center;
     height: 15px;
     padding: 10px;
@@ -385,45 +437,43 @@ body {
     letter-spacing: -0.24px;
     background: $container-header;
     color: $white;
-   }
+  }
 
-   &__nav {
-     padding: 10px 10px;
-     text-transform: uppercase;
-     font-size: 13px;
-     border-bottom: 1px solid $border;
-   }
+  &__nav {
+    padding: 10px 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-bottom: 1px solid $border;
+  }
 
-   &__item {
-     padding-right: 15px;
-     font-size: 11px;
-     font-weight: 500;
-     line-height: 7px;
-     text-transform: uppercase;
-     cursor: pointer;
-   }
+  &__item {
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 7px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
 
-   .scoringTab {
+  .scoringTab {
     color: $selected-green;
-   }   
+  }
+}
 
- }
-
- .inside-left {
-  //  justify-content: center;
+.inside-left {
   display: flex;
- }
+}
 
- .pbp-container,
- .stats-container {
-   margin: 5px;
-   background: $white;
-   min-height: 427px;
-   height: 100%;
-   flex: 1;
-  //  width: 100%; 
+.pbp-container,
+.stats-container {
+  margin: 5px;
+  background: $white;
+  min-height: 427px;
+  height: 100%;
+  flex: 1;
 
-   &__header{
+  &__header {
     text-align: center;
     height: 15px;
     padding: 10px;
@@ -434,63 +484,62 @@ body {
     letter-spacing: -0.24px;
     background: $container-header;
     color: $white;
-   }
- }
+  }
+}
 
- .pbp-container {
-
+.pbp-container {
   .highlighted {
     background: linear-gradient(to top, $highlight, $white);
   }
 
-   &__row {
-     padding: 10px;
-     display: flex;
-     border-bottom: 1px solid $light-gray;
-   }
+  &__row {
+    padding: 10px;
+    display: flex;
+    border-bottom: 1px solid $light-gray;
+  }
 
-   &__headshot {
-     margin-right: 5px;
-   }
+  &__headshot {
+    margin-right: 5px;
+  }
 
-   &__player,
-   &__score {
-     font-weight: bold;
-   }
+  &__player,
+  &__score {
+    font-weight: bold;
+  }
 
-   &__player,
-   &__play {
-     line-height: 14px;
-   }
+  &__player,
+  &__play {
+    line-height: 14px;
+  }
 
-   &__play {
-     color: $fd-gray;
-     font-size: 12px;
-     font-weight: 500;
-   }
+  &__play {
+    color: $fd-gray;
+    font-size: 12px;
+    font-weight: 500;
+  }
 
-   &__play div {
-     display: block;
-   }
+  &__play div {
+    display: block;
+  }
 
-   &__time {
-     font-size: 11px;
-     color: $satan-gray;
-     font-weight: 500;
-     letter-spacing: -0.22px;
-   }
+  &__time {
+    font-size: 11px;
+    color: $satan-gray;
+    font-weight: 500;
+    letter-spacing: -0.22px;
+  }
 
-   &__score {
-     flex: 2;
-     padding-top: 3px;
-     text-align: right;
-     font-size: 14px;
-     letter-spacing: -0.24px;
-     align-content: center;
-   }
- }
+  &__score {
+    flex: 2;
+    padding-top: 3px;
+    text-align: right;
+    font-size: 14px;
+    letter-spacing: -0.24px;
+    align-content: center;
+  }
+}
 
- @media (max-width: 641px) {
+@media (max-width: 641px) {
   .primary-nav,
   .secondary-nav {
     display: none;
@@ -500,61 +549,86 @@ body {
     padding-left: 30%;
   }
 
-   .content,
-   .inside-left,
-   .shotchart-container__header {
-     flex-direction: column;
-   }
+  .content,
+  .inside-left,
+  .shotchart-container__header {
+    flex-direction: column;
+  }
 
-   .global-footer {
-     display: none;
-   }
+  .global-footer {
+    display: none;
+  }
 
-   .shotchart-container {
-     height: 100%;
+  .shotchart-container {
+    height: 100%;
+    &__awayStats ul {
+      padding: 0;
+    }
+    &__awayStats,
+    &__homeStats {
+      list-style-type: none;
+      display: inline;
+    }
+    &__bottom {
+      display: block;
+    }
+    &__content img {
+      padding: 10px;
+      width: 80%;
+    }
+    &__stat {
+      &--away,
+      &--home {
+        &:after {
+          content: '';
+          height: 0;
+        }
+      }
+    }
+    &__header {
+      &--time,
+      &--location {
+        border: none;
+      }
+    }
+  }
 
-     &__content img {
-       padding: 10px;
-       width: 80%;
-     }
-   }
-
-   .active {
+  .active {
     left: 0 !important;
   }
-  
-   .sidebar-nav {
-     position: fixed;
-     top: 0;
-     left: -250px;
-     background: $fanduel-navy;
-     width: 250px;
-     height: 100%;
-     transition: .3s;
 
-     &__list {
-       margin: 0;
-       padding: 20px 0;
-     }
+  .sidebar-nav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background: $fanduel-navy;
+    width: 250px;
+    height: 100%;
+    transition: 0.3s;
 
-     &__item {
-       list-style: none;
-     }
+    &__list {
+      margin: 0;
+      padding: 20px 0;
+    }
 
-     &__anchor {
-       padding: 10px 20px;
-       color: $white;
-       display: block;
-       text-decoration: none;
-       border-bottom: 1px solid $other-games;
+    &__item {
+      list-style: none;
+    }
 
-       &:hover {
-         background: $fanduel-highlight;
-       }
-     }
-   }
+    &__anchor {
+      padding: 10px 20px;
+      color: $white;
+      display: block;
+      text-decoration: none;
+      border-bottom: 1px solid $other-games;
 
-   .sidebarBtn {
+      &:hover {
+        background: $fanduel-highlight;
+      }
+    }
+  }
+
+  .sidebarBtn {
     position: absolute;
     top: 0;
     right: -50px;
@@ -567,13 +641,13 @@ body {
     outline: none;
 
     & span {
-     display: block;
-     width: 35px;
-     height: 3px;
-     background: $white;
-     position: absolute;
-     top: 30px;
-     transition: .3s;
+      display: block;
+      width: 35px;
+      height: 3px;
+      background: $white;
+      position: absolute;
+      top: 30px;
+      transition: 0.3s;
     }
 
     & span:before {
@@ -586,32 +660,30 @@ body {
       background: $white;
     }
 
-
     & span:after {
-     content: '';
-     position: absolute;
-     top: 10px;
-     left: 0;
-     width: 100%;
-     height: 3px;
-     background: $white;
-   }
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: $white;
+    }
   }
- }
+}
 
- @media (min-width: 641px) {
-   .content {
-     padding-left: 5%;
-     padding-right: 5%;
-   }
-   .sidebar-nav {
-     display: none;
-   }
- }
+@media (min-width: 641px) {
+  .content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .sidebar-nav {
+    display: none;
+  }
+}
 
- @media (min-width: 624px) and (max-width: 800px){
+@media (min-width: 624px) and (max-width: 800px) {
   .secondary-nav {
     display: none;
   }
- }
- 
+}

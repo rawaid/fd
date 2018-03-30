@@ -185,7 +185,7 @@ body {
 
 .shotchart-container {
   margin: 5px;
-  height: 430px;
+  height: 450px;
   background: #fff;
   border-radius: 10px; }
   .shotchart-container__header {
@@ -228,7 +228,6 @@ body {
     font-size: 64px;
     font-weight: bold; }
   .shotchart-container__awayCity, .shotchart-container__awayTeam, .shotchart-container__homeCity, .shotchart-container__homeTeam {
-    font-family: 'Gotham Medium', sans-serif;
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase; }
@@ -253,6 +252,39 @@ body {
       font-weight: bold; }
   .shotchart-container__content {
     text-align: center; }
+  .shotchart-container__bottom {
+    display: flex; }
+  .shotchart-container__awayStats, .shotchart-container__homeStats {
+    list-style-type: none;
+    display: inline-flex;
+    flex-direction: column; }
+  .shotchart-container__awayStats, .shotchart-container__homeStats, .shotchart-container__shotchart {
+    flex: 3; }
+  .shotchart-container__awayStats {
+    position: relative; }
+  .shotchart-container__statType {
+    display: block;
+    padding-bottom: 5px; }
+  .shotchart-container__stat {
+    display: inline; }
+    .shotchart-container__stat--away, .shotchart-container__stat--home {
+      list-style-type: none;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 22px;
+      position: relative; }
+      .shotchart-container__stat--away:after, .shotchart-container__stat--home:after {
+        content: '';
+        background: #cccccc;
+        position: absolute;
+        bottom: -10px;
+        margin-left: -80px;
+        width: 90px;
+        height: 1px; }
+    .shotchart-container__stat--away {
+      color: #fdb92c; }
+    .shotchart-container__stat--home {
+      color: #127dc2; }
 
 .scoring-container {
   margin: 5px;
@@ -275,6 +307,7 @@ body {
     font-size: 13px;
     border-bottom: 1px solid #e5e5e5; }
   .scoring-container__item {
+    display: inline-block;
     padding-right: 15px;
     font-size: 11px;
     font-weight: 500;
@@ -360,9 +393,21 @@ body {
     display: none; }
   .shotchart-container {
     height: 100%; }
+    .shotchart-container__awayStats ul {
+      padding: 0; }
+    .shotchart-container__awayStats, .shotchart-container__homeStats {
+      list-style-type: none;
+      display: inline; }
+    .shotchart-container__bottom {
+      display: block; }
     .shotchart-container__content img {
       padding: 10px;
       width: 80%; }
+    .shotchart-container__stat--away:after, .shotchart-container__stat--home:after {
+      content: '';
+      height: 0; }
+    .shotchart-container__header--time, .shotchart-container__header--location {
+      border: none; }
   .active {
     left: 0 !important; }
   .sidebar-nav {
@@ -372,7 +417,7 @@ body {
     background: #2d363c;
     width: 250px;
     height: 100%;
-    transition: .3s; }
+    transition: 0.3s; }
     .sidebar-nav__list {
       margin: 0;
       padding: 20px 0; }
@@ -404,7 +449,7 @@ body {
       background: #fff;
       position: absolute;
       top: 30px;
-      transition: .3s; }
+      transition: 0.3s; }
     .sidebarBtn span:before {
       content: '';
       position: absolute;
