@@ -137,11 +137,6 @@ body {
     font-weight: bold;
   }
 
-  // &__stats {
-  //   font-size: 11px;
-  //   white-space: nowrap;
-  // }
-  
   &__away, 
   &__home {
     display: inline;
@@ -151,8 +146,6 @@ body {
     display: block;
   }
 
-  
-
   &__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -161,7 +154,6 @@ body {
     margin: 0 auto;
   }
 }
-
 
 .logo-container {
   padding-left: 0;
@@ -180,13 +172,14 @@ body {
   display: -ms-flexbox;
  }
 
- .primary-nav {
+ .primary-nav,
+ .secondary-nav {
   -webkit-box-flex: 0;
   -ms-flex: none;
   flex: none;
 
   &__list {
-    display: flex;
+   display: flex;
    flex-wrap: wrap;
    list-style-type: none;
    margin: 0;
@@ -210,7 +203,6 @@ body {
     overflow: hidden;
     position: relative;
 
-
     &:link, 
     &:visited, 
     &:active {
@@ -219,11 +211,41 @@ body {
   }
  }
 
+ .secondary-nav {
+   text-align: right;
+   margin-left: auto;
+   &__balance,
+   &__balance div {
+     display: inline;
+     height: 66px;
+   }
+
+   &__balance div:nth-child(2) {
+     position: absolute;
+     display: block;
+     top: -10px;
+     left: 63px;
+     bottom: 15px;
+     font-size: 11px;
+   }
+
+   &__button {
+     display: inline;
+     border-radius: 3px;
+     position: relative;
+     top: 5px;
+     padding: 6px 10px 6px 10px;
+     background: $selected-green;
+     font-size: 12px;
+     margin-top: 5px;
+     margin-left: 10px;
+   }
+ }
+
  .content {
    display: flex;
    margin-top: 60px;
    padding: 20px;
-
  }
 
  .left-container {

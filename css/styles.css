@@ -116,21 +116,26 @@ body {
   display: -webkit-box;
   display: -ms-flexbox; }
 
-.primary-nav {
+.primary-nav,
+.secondary-nav {
   -webkit-box-flex: 0;
   -ms-flex: none;
   flex: none; }
-  .primary-nav__list {
+  .primary-nav__list,
+  .secondary-nav__list {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     margin: 0; }
-  .primary-nav__item {
+  .primary-nav__item,
+  .secondary-nav__item {
     display: inline-block;
     list-style-type: none; }
-    .primary-nav__item:hover {
+    .primary-nav__item:hover,
+    .secondary-nav__item:hover {
       background: #505a61; }
-  .primary-nav__anchor {
+  .primary-nav__anchor,
+  .secondary-nav__anchor {
     text-align: center;
     padding-right: 25px;
     padding-left: 25px;
@@ -138,8 +143,36 @@ body {
     line-height: 66px;
     overflow: hidden;
     position: relative; }
-    .primary-nav__anchor:link, .primary-nav__anchor:visited, .primary-nav__anchor:active {
+    .primary-nav__anchor:link, .primary-nav__anchor:visited, .primary-nav__anchor:active,
+    .secondary-nav__anchor:link,
+    .secondary-nav__anchor:visited,
+    .secondary-nav__anchor:active {
       color: #fff; }
+
+.secondary-nav {
+  text-align: right;
+  margin-left: auto; }
+  .secondary-nav__balance,
+  .secondary-nav__balance div {
+    display: inline;
+    height: 66px; }
+  .secondary-nav__balance div:nth-child(2) {
+    position: absolute;
+    display: block;
+    top: -10px;
+    left: 63px;
+    bottom: 15px;
+    font-size: 11px; }
+  .secondary-nav__button {
+    display: inline;
+    border-radius: 3px;
+    position: relative;
+    top: 5px;
+    padding: 6px 10px 6px 10px;
+    background: #669933;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 10px; }
 
 .content {
   display: flex;
