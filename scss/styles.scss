@@ -491,7 +491,8 @@ body {
  }
 
  @media (max-width: 641px) {
-  .primary-nav {
+  .primary-nav,
+  .secondary-nav {
     display: none;
   }
 
@@ -606,5 +607,11 @@ body {
    .sidebar-nav {
      display: none;
    }
+ }
+
+ @media (min-width: 624px) and (max-width: 800px){
+  .secondary-nav {
+    display: none;
+  }
  }
  

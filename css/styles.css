@@ -347,7 +347,8 @@ body {
   align-content: center; }
 
 @media (max-width: 641px) {
-  .primary-nav {
+  .primary-nav,
+  .secondary-nav {
     display: none; }
   .logo-container {
     padding-left: 30%; }
@@ -426,4 +427,8 @@ body {
     padding-left: 5%;
     padding-right: 5%; }
   .sidebar-nav {
+    display: none; } }
+
+@media (min-width: 624px) and (max-width: 800px) {
+  .secondary-nav {
     display: none; } }
